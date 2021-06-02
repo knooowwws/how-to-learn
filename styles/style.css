@@ -1,3 +1,44 @@
+@import url(../blocks/header/header.css);
+@import url(../blocks/description/description.css);
+@import url(../blocks/techniques/techniques.css);
+@import url(../blocks/digits/digits.css);
+@import url(../blocks/kaufman/kaufman.css);
+@import url(../blocks/resources/resources.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/common-styles/rotation.css);
+@import url(../blocks/common-styles/opacity.css);
+@import url(../blocks/video/video.css);
+@import url(../blocks/oakley/oakley.css);
+@import url(../blocks/feynman/feynman.css);
+@import url(../blocks/khan/khan.css);
+@import url(./normalize.css);
+
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  src: url(../vendor/fonts/inter/Inter-Regular.woff) format('woff'),
+    url(../vendor/fonts/inter/Inter-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 600;
+  src: url(../vendor/fonts/inter/Inter-SemiBold.woff) format('woff'),
+    url(../vendor/fonts/inter/Inter-SemiBold.wof2) format('woff2');
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -6,26 +47,31 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
+.section-title {
+  width: 60%;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 700;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.section-subtitle {
+  padding-top: 20px;
+  width: 60%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+ul {
+  padding: 0;
 }

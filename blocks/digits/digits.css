@@ -1,0 +1,10 @@
+@import url(./_padding/digits_padding.css);
+@import url(./table/table.css);
+
+
+.digits {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
